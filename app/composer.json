@@ -1,0 +1,11 @@
+{
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "phpunit/phpunit": "^8.4 || ^9"
+    },
+
+    "scripts": {
+        "test": "phpunit --configuration phpunit.xml",
+        "execute": "php main.php"
+    }
+}

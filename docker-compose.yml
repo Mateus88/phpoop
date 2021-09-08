@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    build: docker/app
+    volumes:
+      - ${VOLUME_APP}:/var/www/html/app/
+    environment:
+      - ENV=dev
+    ports:
+      - "${PORT_APP}:80"
